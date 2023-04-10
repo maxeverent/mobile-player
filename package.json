@@ -4,11 +4,16 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@fontsource/metropolis": "^4.5.3",
     "@nativescript/core": "~8.4.0",
     "@nativescript/theme": "~3.0.2",
-    "nativescript-vue": "~2.9.2"
+    "nativescript-audio": "^6.2.6",
+    "nativescript-audio-player": "^1.0.3",
+    "nativescript-vue": "~2.9.2",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@nativescript/android": "8.3.1",
     "@nativescript/webpack": "~5.0.12",
     "nativescript-vue-template-compiler": "~2.9.2"
   }

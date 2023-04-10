@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url("./fonts/Metropolis-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url("./fonts/Metropolis-Regular.ttf");
+}
+
+//home
+
+
+.title {
+    font-family: 'Metropolis-Bold';
+    font-size: 18px;
+}
+
+.home-background {
+    height: 3000px;
+    .nav {
+        margin-top: 30px;
+        width: 1350px;
+        height: 200px;
+        justify-content: space-between;
+        .nav-btn {
+            background-color: rgba(108, 206, 149, 0.199);
+            height: 150px;
+            width: 400px;
+            font-family: 'Metropolis-Bold';
+            font-size: 18px;
+            color: black;
+            border-radius: 70px;
+            padding-top: 20px;
+            margin-left: 135px;
+            margin-right: 135px;
+        }
+    }
+    .tracks {
+        height: 1800px;
+        .search {
+            width: 1350px;
+            height: 150px;
+            font-family: 'Metropolis-Regular';
+            font-size: 15px;
+            background-color: rgba(149, 112, 255, 0.1);
+            border-radius: 70px;
+            margin: 25px;
+            padding-left: 65px;
+            color: #828282;
+        }
+        .track {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .playlists {
+        height: 1800px;
+        .create-playlist {
+            .search {
+                width: 900px;
+                height: 150px;
+                font-family: 'Metropolis-Regular';
+                font-size: 15px;
+                background-color: rgba(149, 112, 255, 0.1);
+                border-radius: 70px;
+                margin: 25px;
+                padding-left: 65px;
+                color: #828282;
+                margin-left: 50px;
+            }
+            .create {
+                background-color: rgba(108, 206, 149, 0.199);
+                height: 150px;
+                width: 400px;
+                font-family: 'Metropolis-Bold';
+                font-size: 18px;
+                color: black;
+                border-radius: 70px;
+                padding-top: 20px;
+            }
+            .error {
+                color: red;
+                font-family: 'Metropolis-Bold';
+                font-size: 15px;
+                margin-left: 50px;
+            }
+        }
+        .playlist {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+//player
+
+.player-body {
+    background: rgba(255, 255, 255, 0.774);
+    box-shadow: 0px -19px 47px rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(10.5px);
+    border-radius: 70px;
+    height: 800px;
+    width: 1450px;
+    .track-info {
+        margin-top: 100px;
+        height: 300px;
+        width: 740px;
+        .name {
+            font-family: 'Metropolis-Bold';
+            font-size: 23px;
+            text-align: center;
+        }
+        .artist {
+            font-family: 'Metropolis-Regular';
+            color: #828282;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+    .player-btns {
+        height: 400px;
+        width: 1450px;
+        border-radius: 70px 70px 0 0;        
+        margin-top: 10px;
+        .btns {
+            height: 300px;
+            width: 740px;
+            .play {
+                height: 150px;
+                width: 150px;
+                background-image: url('~/images/play.png');
+                background-size: cover;
+                border-radius: 100%;
+                margin: 54px;
+            }
+            .stop {
+                height: 150px;
+                width: 150px;
+                background-image: url('~/images/pause.png');
+                background-size: cover;
+                border-radius: 100%;
+                margin: 54px;
+            }
+            .prev {
+                height: 150px;
+                width: 150px;
+                background-image: url('~/images/prev.png');
+                background-size: cover;
+                border-radius: 100%;
+                margin: 54px;
+            }
+            .next {
+                height: 150px;
+                width: 150px;
+                background-image: url('~/images/next.png');
+                background-size: cover;
+                border-radius: 100%;
+                margin: 54px;
+            }
+        }
+        .progress {
+            width: 1300px;
+            height: 50px;
+            background-color: #9570FF;
+            color: #9570FF;
+            box-sizing: border-box;
+            border: 10px solid #9570FF;
+            border-radius: 100%;
+        }
+    }
+}
+
+
+//track
+
+.background {
+    background: rgba(149, 112, 255, 0.1);
+    width: 1350px;
+    height: 300px;
+    border-radius: 70px;
+    justify-content: space-between;
+    .track {
+        margin-left: 60px;
+        margin-top: 40px;
+        width: 600px;
+        height: 100px;      
+        .track-name {
+            font-family: 'Metropolis-Bold';
+            font-size: 23px;
+        }
+        .track-artist {
+            font-family: 'Metropolis-Regular';
+            color: #828282;
+            font-size: 17px;
+        }            
+    }
+    .btns {
+        width: 350px;
+        height: 150px;  
+        .play {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-image: url('~/images/play-button.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .add {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-image: url('~/images/add.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+//modal
+
+.modal-background {
+    border-radius: 70px;
+    padding: 50px;
+    .playlist-item {
+        margin: 50px;
+    }
+    .error {
+        color: red;
+        margin-bottom: 50px;
+        font-family: 'Metropolis-Bold';
+        font-size: 16px;
+    }
+}
+
+
+//playlistitem 
+
+.playlist-item {
+    background-color: rgba(108, 206, 149, 0.199);
+    height: 150px;
+    width: 400px;
+    font-family: 'Metropolis-Bold';
+    font-size: 18px;
+    color: black;
+    border-radius: 70px;
+    .name {
+        width: 300px;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+
+//playlist
+
+.playlist-background {
+    width: 1450px;
+    .playlist-btns {
+        background-color: rgba(108, 206, 149, 0.199);
+        width: 1350px;
+        height: 250px;
+        border-radius: 70px;
+        .btn {
+            width: 130px;
+            height: 130px;
+            border-radius: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-image: url('~/images/close.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .playlist-name {
+            width: 1000px;
+            .name {
+                font-family: 'Metropolis-Bold';
+                font-size: 25px;
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
+    .playlist-tracks {
+        width: 1300px;
+        .tracks {
+            width: 1300px;
+            height: auto;
+            .track {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        .empty {
+            font-family: 'Metropolis-Bold';
+            font-size: 23px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+}
+
+
+//playlisttrack 
+
+
+.background-track {
+    background: rgba(149, 112, 255, 0.1);
+    width: 1350px;
+    height: 300px;
+    border-radius: 70px;
+    justify-content: space-between;
+    .track {
+        margin-left: 60px;
+        margin-top: 40px;
+        width: 600px;
+        height: 100px;      
+        .track-name {
+            font-family: 'Metropolis-Bold';
+            font-size: 23px;
+        }
+        .track-artist {
+            font-family: 'Metropolis-Regular';
+            color: #828282;
+            font-size: 17px;
+        }            
+    }
+    .btns {
+        width: 350px;
+        height: 150px;  
+        .play {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-image: url('~/images/play-button.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .del {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-image: url('~/images/close.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
